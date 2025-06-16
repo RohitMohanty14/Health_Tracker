@@ -1,0 +1,72 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
+
+# BlueJ
+*.ctxt
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.project
+.classpath
+.settings/
+.metadata/
+
+# VS Code
+.vscode/
+
+# Maven
+target/
+.mvn/
+!**/src/main/**/.mvn
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Spring Boot Embedded DBs
+*.mv.db
+*.h2.db
+*.db
+
+# Environment variables
+.env
+*.env
+
+# Test output
+/test-output/
+/surefire-reports/
+jacoco.exec
+coverage/
+coverage-report/
+
+# Node modules (if frontend uses React or Angular)
+node_modules/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
