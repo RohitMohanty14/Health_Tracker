@@ -60,18 +60,6 @@ git pull origin develop                 # Pull latest changes first
 git push origin develop                 # Push your work
 ```
 
----
-
-## ✍️ Commit Message Format
-
-| Prefix    | Purpose                         | Example                           |
-|-----------|----------------------------------|------------------------------------|
-| `feat:`   | New feature                      | `feat: added login form (Jahnavi)` |
-| `fix:`    | Bug fix                          | `fix: fixed validation error (Rohit)` |
-| `chore:`  | Non-code change                  | `chore: updated script folder (Omm)` |
-| `docs:`   | Documentation                    | `docs: added git guide (Siddharth)` |
-
----
 
 ## 👥 Team Members
 
