@@ -66,7 +66,7 @@ git push origin develop                 # Push your work
 | Member | Name                  | Role                     | Task Description                            |
 |--------|-----------------------|--------------------------|---------------------------------------------|
 | 1      | Rohit Maji            | Scrum Master             | Jira board, daily standups                  |
-| 2      | Jahnavi Pemula        | Frontend Developer       | Login and registration UI                   |
+| 2      | Pemula Jahnavi        | Frontend Developer       | Login and registration UI                   |
 | 3      | Rohit Mohanty         | UI Validator             | JS/jQuery form validation                   |
 | 4      | P Siddharth Krishna   | Git Lead                 | Git setup, branching, documentation         |
 | 5      | Omm Susekhar Pani     | Shell Script Developer   | Auto-backup script for frontend code        |
