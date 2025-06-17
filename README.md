@@ -133,4 +133,4 @@ This project is created for academic learning purposes as part of a multi-sprint
 ---
 
 🛠 Maintained by: `Team - Online Health Tracker`  
-🔗 GitHub Repository: [your-repo-link-here](https://github.com/your-username/online-health-tracker)
+🔗 GitHub Repository: [your-repo-link-here](https://github.com/RohitMohanty14/online-health-tracker)
