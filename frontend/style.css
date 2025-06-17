@@ -1,8 +1,14 @@
-/* General body styling */
 body {
-  background: linear-gradient(to right, #74ebd5, #acb6e5);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Highlighted Change: Replaced gradient colors with shades of green */
+  background: linear-gradient(
+    to right,
+    #d0f0c0,
+    #8bc34a
+  ); /* A gentle light green to a vibrant lime green */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
+  /* Added for overall consistency, making sure text defaults to a dark neutral */
+  color: #343a40;
 }
 
 /* Hero Section Image Styling */
@@ -11,10 +17,12 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
+  /* Highlighted Change: Slightly more subtle black shadow, can be green if desired but black is versatile */
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   animation: floatIn 1s ease-out;
   display: block;
-  filter: brightness(0.95);
+  /* Highlighted Change: Adjust brightness slightly if original image is too vivid */
+  filter: brightness(0.9); /* Subtle dimming to fit ambush aesthetic */
 }
 
 /* Text fade-in */
@@ -47,19 +55,21 @@ body {
 
 /* Feature Box Styling */
 .feature-box {
-  border: 2px solid black; 
+  /* Highlighted Change: Replaced black border with a primary green */
+  border: 2px solid #2e8b57; /* Sea Green for a defined, thematic border */
   border-radius: 25px;
   padding: 20px;
   background-color: #ffffff;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow to transition */
 }
 
 .feature-box:hover {
   transform: translateY(-5px);
-  border-color: #0b5ed7; 
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  /* Highlighted Change: Replaced blue hover border with a slightly darker green */
+  border-color: #287a4c; /* Darker green on hover for interaction feedback */
+  /* Highlighted Change: Added a subtle, green-tinted box-shadow on hover */
+  box-shadow: 0 8px 20px rgba(46, 139, 87, 0.2); /* Green-tinted shadow */
 }
-
 
 /* Carousel Testimonials */
 .blockquote {
@@ -70,7 +80,8 @@ body {
 .blockquote-footer {
   margin-top: 10px;
   font-size: 0.9rem;
-  color: #555;
+  /* Highlighted Change: Keep as a soft dark grey for readability, fits neutral palette */
+  color: #6c757d;
 }
 
 /* Card styling */
@@ -78,18 +89,45 @@ body {
   border: none;
   border-radius: 16px;
   background-color: #ffffff;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  /* Highlighted Change: Slightly softened shadow, or could be green-tinted if preferred */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* Buttons */
-.btn-primary, .btn-success {
+.btn-primary {
+  /* Highlighted Change: Primary button uses the deep sea green */
+  background-color: #2e8b57;
+  /* Highlighted Change: Ensure border is also green for consistency */
+  border-color: #2e8b57;
   border-radius: 50px;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
 }
-.btn-primary:hover, .btn-success:hover {
+.btn-success {
+  /* Highlighted Change: Success button uses a slightly brighter green */
+  background-color: #388e3c;
+  /* Highlighted Change: Ensure border is also green for consistency */
+  border-color: #388e3c;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  /* Highlighted Change: Darker green on hover for primary button */
+  background-color: #287a4c;
+  border-color: #287a4c;
   transform: scale(1.05);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  /* Highlighted Change: Green-tinted box-shadow on hover */
+  box-shadow: 0 8px 18px rgba(46, 139, 87, 0.25);
+}
+.btn-success:hover {
+  /* Highlighted Change: Darker green on hover for success button */
+  background-color: #337e33;
+  border-color: #337e33;
+  transform: scale(1.05);
+  /* Highlighted Change: Green-tinted box-shadow on hover */
+  box-shadow: 0 8px 18px rgba(56, 142, 60, 0.25);
 }
 
 /* Input styling */
@@ -97,16 +135,27 @@ body {
   border-radius: 8px;
   padding: 12px 16px;
   font-size: 14px;
+  /* Highlighted Change: Input border default to a light green */
+  border-color: #c8e6c9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Ensure transitions are set */
 }
+/* Highlighted Change: Input focus style for consistency */
+.form-control:focus {
+  border-color: #2e8b57; /* Primary green on focus */
+  box-shadow: 0 0 0 0.25rem rgba(46, 139, 87, 0.2); /* Soft green glow */
+  outline: none;
+}
+
 .form-label {
   font-weight: 500;
+  /* Highlighted Change: Keep as dark gray for readability */
   color: #333;
 }
 
-
 a {
   text-decoration: none;
-  color: #007bff;
+  /* Highlighted Change: Links now use the primary green color */
+  color: #2e8b57;
 }
 a:hover {
   text-decoration: underline;
@@ -115,10 +164,12 @@ a:hover {
 /* Headings */
 h3 {
   font-weight: 700;
-  color: #333;
+  /* Highlighted Change: Headings use the primary green */
+  color: #2e8b57;
 }
 h2 {
-  color: #222;
+  /* Highlighted Change: Headings use the primary green */
+  color: #2e8b57;
   font-weight: 700;
 }
 
@@ -146,49 +197,59 @@ html {
   scroll-behavior: smooth;
 }
 
+/* --- Dark Mode Enhancements (Ambient Green Ambush for Dark Mode) --- */
 
 body.dark-mode {
-  background-color: #121212;
+  /* Highlighted Change: Very dark green for dark mode background */
+  background-color: #0f1e1a;
+  /* Highlighted Change: Lighter text for dark mode */
   color: #e0e0e0;
 }
 
 .dark-mode .card,
 .dark-mode .feature-box {
-  background-color: #1f1f1f !important;
+  /* Highlighted Change: Dark green for card/feature box backgrounds */
+  background-color: #1c2e2a !important;
   color: #e0e0e0;
 }
 
 .dark-mode .navbar,
 .dark-mode footer {
-  background-color: #000 !important;
+  /* Highlighted Change: Very dark green for navbar/footer backgrounds */
+  background-color: #001a14 !important;
 }
 
 .dark-mode a {
-  color: #90caf9;
+  /* Highlighted Change: Light green for links in dark mode */
+  color: #81c784;
 }
 
 .dark-mode .form-control {
-  background-color: #2c2c2c;
+  /* Highlighted Change: Dark green for input background in dark mode */
+  background-color: #2a3a35;
   color: #fff;
-  border-color: #444;
+  /* Highlighted Change: Darker green for input border in dark mode */
+  border-color: #405c55;
 }
 
 .dark-mode .btn-outline-light {
-  border-color: #90caf9;
-  color: #90caf9;
+  /* Highlighted Change: Light green for outline button border */
+  border-color: #81c784;
+  /* Highlighted Change: Light green for outline button text */
+  color: #81c784;
 }
 
 .dark-mode .btn-outline-light:hover {
-  background-color: #90caf9;
-  color: #000;
+  background-color: #81c784;
+  color: #004d40;
 }
 
-/* Fix sections with light backgrounds */
+/* Fix sections with light backgrounds in dark mode */
 body.dark-mode .bg-light {
-  background-color: #1e1e1e !important;
+  background-color: #1a2a25 !important;
 }
 body.dark-mode .bg-white {
-  background-color: #2a2a2a !important;
+  background-color: #2e3d39 !important;
 }
 body.dark-mode .text-dark {
   color: #f1f1f1 !important;
@@ -200,4 +261,3 @@ body.dark-mode h5,
 body.dark-mode p {
   color: #f1f1f1 !important;
 }
-
