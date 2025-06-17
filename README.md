@@ -28,11 +28,11 @@ A responsive, modular web application to help users track daily health metrics l
 
 ```
 Health_Tracker/
-├── frontend/         # UI code - Jahnavi
-├── validation/       # JS form validation - Rohit Mohanty
-├── scripts/          # Shell script - Omm
-├── docs/             # Git guide, documentation - Siddharth
-├── qa/               # QA checklist - Rahul
+├── frontend/         
+├── validation/       
+├── scripts/          
+├── docs/             
+├── qa/               
 └── README.md         # Project overview
 ```
 
@@ -55,7 +55,7 @@ git checkout develop                    # Make sure you're on develop
 ### 🔹 Committing and Pushing
 ```bash
 git add .
-git commit -m "feat: added login page (Jahnavi)"
+git commit -m "feat: added login page"
 git pull origin develop                 # Pull latest changes first
 git push origin develop                 # Push your work
 ```
@@ -89,7 +89,6 @@ git push origin develop                 # Push your work
 ## 📘 Documentation
 
 - [`docs/GIT_GUIDE.md`](docs/GIT_GUIDE.md) — Git instructions
-- UI Flow Diagram – coming soon
 - API Spec – will be added in Sprint 3
 
 ---
