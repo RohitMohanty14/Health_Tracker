@@ -1,9 +1,9 @@
-/* healthStyle.css */
+/* dashboard-style.css */
 
 /* 1. Google Font & Base Imports */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
 
-/* 2. Color Palette & Base Styles (Consistent with other pages) */
+/* 2. Color Palette & Base Styles (Consistent with Landing Page) */
 :root {
   --dusty-rose: #aa6373;
   --dark-navy: #001f54;
@@ -14,7 +14,7 @@
   --light-text: #f0f0f0;
 
   --bg-primary: var(--snow);
-  --bg-secondary: #f7f9fb;
+  --bg-secondary: #f7f9fb; /* A slightly off-white for main background */
   --text-primary: var(--dark-text);
   --text-secondary: #555;
   --nav-bg: rgba(254, 252, 251, 0.8);
@@ -22,8 +22,6 @@
   --card-bg: #ffffff;
   --shadow: 0 4px 15px rgba(0, 31, 84, 0.07);
   --border-color: rgba(0, 31, 84, 0.1);
-  --error-color: var(--dusty-rose);
-  --success-color: var(--teal);
 }
 
 body.dark-mode {
@@ -61,7 +59,7 @@ h6 {
   color: var(--text-primary);
 }
 
-/* 3. Consistent Navbar */
+/* 3. Navbar (Re-used from landing page for consistency) */
 .navbar {
   background-color: var(--nav-bg);
   backdrop-filter: blur(10px);
@@ -69,21 +67,28 @@ h6 {
   transition: background-color 0.3s ease;
   border-bottom: 1px solid var(--border-color);
 }
+
 .navbar-brand {
   color: var(--teal) !important;
   font-weight: 800;
+  font-size: 1.8rem !important;
 }
+
 .navbar-brand .bi {
   color: var(--dusty-rose);
 }
+
 .nav-link {
   color: var(--nav-text) !important;
   font-weight: 600;
+  transition: color 0.2s ease;
 }
+
 .nav-link:hover,
 .nav-link.active {
   color: var(--teal) !important;
 }
+
 #toggleDark {
   border: 1px solid var(--teal);
   color: var(--teal);
@@ -94,101 +99,102 @@ h6 {
   color: var(--card-bg);
 }
 
-/* 4. Form Page Layout */
-.form-page-wrapper {
-  min-height: calc(100vh - 70px); /* Full height minus navbar */
-  display: flex;
-  align-items: center;
+/* 4. Dashboard Specific Styles */
+.dashboard {
+  padding: 40px 0;
 }
 
-.form-card {
+.dashboard-card {
   background-color: var(--card-bg);
-  padding: 40px;
-  border-radius: 20px;
+  padding: 25px;
+  border-radius: 15px;
   box-shadow: var(--shadow);
   border: 1px solid var(--border-color);
-}
-
-.info-pane {
-  padding: 40px;
-  text-align: center;
-  color: var(--light-text);
-  background: linear-gradient(45deg, var(--teal), var(--dusty-rose));
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
 }
 
-.info-pane .bi {
-  font-size: 3rem;
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 31, 84, 0.1);
+}
+body.dark-mode .dashboard-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
 }
 
-/* 5. Form Element Styling */
-.form-label {
+.card-header-flex h5 {
+  margin: 0;
   font-weight: 600;
+  color: var(--text-primary);
+}
+
+.card-icon {
+  font-size: 1.5rem;
+  color: var(--teal);
+}
+
+.metric-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 5px;
+}
+
+.metric-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* Custom Progress Bar */
+.progress {
+  height: 8px;
+  border-radius: 4px;
+  background-color: var(--bg-secondary);
+}
+
+.progress-bar {
+  background-color: var(--teal);
+}
+
+/* Health Tips Section */
+.health-tips-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.health-tips-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
   color: var(--text-secondary);
 }
 
-.form-control {
-  background-color: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  padding: 12px 15px;
-  color: var(--text-primary);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+.health-tips-list .bi {
+  color: var(--dusty-rose);
+  font-size: 1.2rem;
+  margin-right: 15px;
+  margin-top: 3px;
 }
 
-.form-control:focus {
-  background-color: var(--bg-secondary);
-  color: var(--text-primary);
-  border-color: var(--teal);
-  box-shadow: 0 0 0 3px rgba(18, 130, 162, 0.25);
+/* Animations */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease-out forwards;
 }
 
-.form-control.is-invalid {
-  border-color: var(--error-color);
-}
-.form-control.is-invalid:focus {
-  box-shadow: 0 0 0 3px rgba(170, 99, 115, 0.25);
-}
-
-.invalid-feedback {
-  color: var(--error-color);
-  font-weight: 500;
-}
-
-.btn-primary {
-  background-color: var(--teal);
-  border-color: var(--teal);
-  font-weight: 600;
-  padding: 12px 30px;
-  width: 100%;
-  border-radius: 8px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.btn-primary:hover {
-  background-color: #106b83;
-  border-color: #106b83;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(18, 130, 162, 0.3);
-}
-
-.btn-primary:disabled {
-  background-color: var(--text-secondary);
-  border-color: var(--text-secondary);
-  cursor: not-allowed;
-}
-
-.status-message {
-  display: none;
-  margin-top: 15px;
-  padding: 10px;
-  border-radius: 5px;
-  font-weight: 500;
-  color: #fff;
-  background-color: var(--success-color);
-  text-align: center;
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

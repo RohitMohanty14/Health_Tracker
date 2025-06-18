@@ -1,139 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Online Health Tracker</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <!-- Navbar -->
-  <nav class="navbar" style="background-color: #212529;">
-  <div class="container d-flex justify-content-between align-items-center py-3">
-    <a class="navbar-brand text-light d-flex align-items-center fs-3" href="#">
-      <i class="bi bi-heart-pulse-fill me-2 fs-3"></i>HealthTracker
-    </a>
-    <div class="d-flex gap-4 align-items-center">
-      <a href="login.html" class="text-light text-decoration-none">Login</a>
-      <a href="register.html" class="text-light text-decoration-none">Sign Up</a>
-      <a href="healthMatrixForm.html" class="text-light text-decoration-none">Health Details</a>
-      <!-- 🌙 Dark Mode Toggle -->
-      <button id="toggleDark" class="btn btn-sm btn-outline-light" title="Toggle dark mode">
-        <i class="bi bi-moon-fill"></i>
-      </button>
-    </div>
-  </div>
-</nav>
-
-
-
-
-
-  <!-- Hero Section -->
-  <section class="py-5 bg-light text-center">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 mb-4 mb-md-0 fade-in-text">
-          <h1 class="display-5 fw-bold">Track Your Health. Daily.</h1>
-          <p class="lead mt-3">
-            Log your steps, monitor sleep, record calories — all in one place.<br />
-            Stay consistent. Stay healthy.
-          </p>
-          <a href="register.html" class="btn btn-primary btn-lg mt-3">Get Started</a>
-        </div>
-        <div class="col-md-6 d-flex align-items-stretch">
-            <img src="images/imagee.jpg" alt="Health Tracker" class="hero-image w-100" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Features Section -->
-  <section class="py-5 bg-white text-center">
-    <div class="container text-center">
-      <h2 class="mb-4 fw-bold">Why Choose HealthTracker?</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="p-4 shadow-sm rounded bg-light feature-box">
-            <h5>Daily Metrics</h5>
-            <p>Track steps, sleep hours, and calorie intake with ease.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="p-4 shadow-sm rounded bg-light feature-box">
-            <h5>Health Insights</h5>
-            <p>Get weekly summaries and personalized tips based on your data.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="p-4 shadow-sm rounded bg-light feature-box">
-            <h5>Easy to Use</h5>
-            <p>Clean interface, mobile-friendly, and simple navigation.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Health Tracker</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Link to your new CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container py-2">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <i class="bi bi-heart-pulse-fill me-2"></i>HealthTracker
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav ms-auto d-flex align-items-center gap-3">
+            <a class="nav-link" href="login.html">Login</a>
+            <a class="nav-link" href="register.html">Sign Up</a>
+            <a class="nav-link" href="healthForm.html">Health Details</a>
+            <a class="nav-link" href="dashboard.html">Dashboard</a>
+            <button
+              id="toggleDark"
+              class="btn btn-sm btn-outline-light ms-2"
+              title="Toggle dark mode"
+            >
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Testimonials Section -->
-  <section class="py-5 bg-light text-center">
-    <div class="container text-center">
-      <h2 class="mb-4 fw-bold">What Users Say!</h2>
-      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <blockquote class="blockquote">
-              <p>"This app changed how I view my health. Simple and powerful!"</p>
-              <footer class="blockquote-footer">Aarav Mehta</footer>
-            </blockquote>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 text-center text-lg-start">
+            <h1 class="display-4 mb-4 fade-in-up">
+              Your Health, <br />Simplified & Synced.
+            </h1>
+            <p class="lead mb-4 fade-in-up" style="animation-delay: 0.2s">
+              Effortlessly log your steps, monitor sleep, and track nutrition.
+              Take control of your well-being with smart insights and daily
+              motivation.
+            </p>
+            <a
+              href="register.html"
+              class="btn btn-primary btn-lg mt-3 fade-in-up"
+              style="animation-delay: 0.4s"
+              >Start Your Journey</a
+            >
           </div>
-          <div class="carousel-item">
-            <blockquote class="blockquote">
-              <p>"Logging my steps and sleep helped me build better habits."</p>
-              <footer class="blockquote-footer">Sneha Reddy</footer>
-            </blockquote>
-          </div>
-          <div class="carousel-item">
-            <blockquote class="blockquote">
-              <p>"Finally, a tracker that feels modern and useful!"</p>
-              <footer class="blockquote-footer">Rohan Desai</footer>
-            </blockquote>
+          <div class="col-lg-6">
+            <div
+              class="hero-image-container fade-in-up"
+              style="animation-delay: 0.3s"
+            >
+              <img
+                src="images/imagee.jpg"
+                alt="A person jogging with a health tracker app interface overlay"
+                class="hero-image"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-light py-4">
-    <div class="container d-flex flex-column flex-md-row justify-content-between">
-      <div>
-        <h5>Online Health Tracker</h5>
-        <p class="small">© 2025 All rights reserved</p>
+    <!-- Features Section -->
+    <section class="features-section">
+      <div class="container text-center">
+        <h2 class="section-title fade-in-up">
+          The All-in-One Health Companion
+        </h2>
+        <div class="row g-4 justify-content-center">
+          <div
+            class="col-md-6 col-lg-4 d-flex align-items-stretch fade-in-up"
+            style="animation-delay: 0.1s"
+          >
+            <div class="feature-box">
+              <i class="bi bi-graph-up-arrow feature-icon"></i>
+              <h5>Daily Metrics Tracking</h5>
+              <p>
+                Log steps, sleep hours, and calorie intake with our intuitive
+                and simple interface.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-4 d-flex align-items-stretch fade-in-up"
+            style="animation-delay: 0.2s"
+          >
+            <div class="feature-box">
+              <i class="bi bi-lightbulb-fill feature-icon"></i>
+              <h5>Personalized Insights</h5>
+              <p>
+                Receive weekly summaries and actionable tips based on your data
+                to build better habits.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-4 d-flex align-items-stretch fade-in-up"
+            style="animation-delay: 0.3s"
+          >
+            <div class="feature-box">
+              <i class="bi bi-phone-fill feature-icon"></i>
+              <h5>Seamless & Responsive</h5>
+              <p>
+                A clean, mobile-first design that works beautifully on all your
+                devices, anytime, anywhere.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <p class="small mb-1">Contact: support@healthtracker.com</p>
-        <p class="small">Phone: +91 98765 43210</p>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <div class="container text-center">
+        <h2 class="section-title fade-in-up">Loved by Users Everywhere</h2>
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonial-card">
+                <p>
+                  "This app completely changed how I approach my health. It’s
+                  simple, beautiful, and incredibly powerful. A must-have!"
+                </p>
+                <footer class="blockquote-footer">Aarav Mehta</footer>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-card">
+                <p>
+                  "Finally, a health tracker that feels modern and isn't
+                  cluttered. Logging my steps and sleep has never been easier."
+                </p>
+                <footer class="blockquote-footer">Sneha Reddy</footer>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-card">
+                <p>
+                  "The weekly insights are a game-changer. It's like having a
+                  personal health coach in my pocket. Highly recommended!"
+                </p>
+                <footer class="blockquote-footer">Rohan Desai</footer>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  
-  <script>
-  const toggleBtn = document.getElementById("toggleDark");
-  toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-    console.log("Dark mode toggled:", document.body.classList.contains("dark-mode"));
-  });
-</script>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+            <h5>HealthTracker</h5>
+            <p class="mb-0">© 2025 All rights reserved</p>
+          </div>
+          <div class="col-md-4 text-center mb-3 mb-md-0">
+            <div class="social-icons">
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-4 text-center text-md-end">
+            <p class="mb-1">
+              Contact:
+              <a
+                href="mailto:support@healthtracker.com"
+                class="text-decoration-none"
+                >support@healthtracker.com</a
+              >
+            </p>
+            <p class="mb-0">Phone: +91 98765 43210</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Custom JS for Animations & Dark Mode -->
+    <script>
+      // Dark Mode Toggle
+      const toggleBtn = document.getElementById("toggleDark");
+      const body = document.body;
+      const moonIcon = toggleBtn.querySelector(".bi");
 
-</body>
+      toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+
+        if (body.classList.contains("dark-mode")) {
+          moonIcon.classList.remove("bi-moon-stars-fill");
+          moonIcon.classList.add("bi-sun-fill");
+          localStorage.setItem("theme", "dark");
+        } else {
+          moonIcon.classList.remove("bi-sun-fill");
+          moonIcon.classList.add("bi-moon-stars-fill");
+          localStorage.setItem("theme", "light");
+        }
+      });
+
+      // Check for saved theme in localStorage
+      if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+        moonIcon.classList.remove("bi-moon-stars-fill");
+        moonIcon.classList.add("bi-sun-fill");
+      }
+
+      // Intersection Observer for Animations
+      const animatedElements = document.querySelectorAll(".fade-in-up");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+            }
+          });
+        },
+        {
+          threshold: 0.1,
+        }
+      );
+
+      animatedElements.forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+  </body>
 </html>
