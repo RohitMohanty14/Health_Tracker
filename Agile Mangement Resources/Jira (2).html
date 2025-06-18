@@ -1,0 +1,903 @@
+<html
+        xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>Jira</title>
+<style type="text/css">
+table {
+    mso-displayed-decimal-separator:"\.";
+    mso-displayed-thousand-separator:"\,";
+}
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color:black;
+}
+
+</style>
+<META HTTP-EQUIV="Content-Type" Content="application/vnd.ms-excel; charset=UTF-8">
+<!-- JRA-7598 - ensure fields (e.g. description) occupy only one cell - even fields containing newlines. -->
+<!--
+Vertical align all cells to the top, in order to align all issue rows of issuetable to the top,
+since Excel does not use or save the css files it is hardcoded here.
+-->
+<style>
+@page
+{
+mso-page-orientation:landscape;
+margin:.25in .25in .5in .25in;
+mso-header-margin:.5in;
+mso-footer-margin:.25in;
+mso-footer-data:"&R&P of &N";
+mso-horizontal-page-align:center;
+mso-vertical-page-align:center;
+}
+
+td.issuekey,
+td.issuetype,
+td.status {
+    mso-style-parent: "";
+    mso-number-format: \@;
+    text-align: left;
+}
+br
+{
+    mso-data-placement:same-cell;
+}
+
+td
+{
+    vertical-align: top;
+}
+</style>
+
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>general_report</x:Name>
+<x:WorksheetOptions>
+<x:Print>
+<x:ValidPrinterInfo/>
+</x:Print>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+<body>
+
+<table border="1">
+    <tr bgcolor="#205081" height="30">
+        <td colspan="11">
+            <img src="https://rohitmaji2002.atlassian.net/images/icon-jira-family-logo.png" width="57" height="30" border="0" alt="Jira">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="11">
+            <a href="https://rohitmaji2002.atlassian.net/issues/?jql=created+%3E%3D+-30d+order+by+created+DESC">Jira</a>
+        </td>
+    </tr>
+    <tr>
+                <td colspan="11">
+            Displaying <strong>26</strong> issues at <strong>18/Jun/25 11:36 PM</strong>.
+        </td>
+    </tr>
+</table>
+
+
+
+
+                                        <table id="issuetable" class="aui " border="1" cellpadding="3" cellspacing="1" width="100%">
+                        <thead>
+        <tr class="rowHeader">
+            
+                                                            <th class="colHeaderLink headerrow-issuetype" data-id="issuetype">
+                                                        Issue Type
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuekey" data-id="issuekey">
+                                                        Key
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-summary" data-id="summary">
+                                                        Summary
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-assignee" data-id="assignee">
+                                                        Assignee
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-reporter" data-id="reporter">
+                                                        Reporter
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-priority" data-id="priority">
+                                                        Priority
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-status" data-id="status">
+                                                        Status
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-resolution" data-id="resolution">
+                                                        Resolution
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-created" data-id="created">
+                                                        Created
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-updated" data-id="updated">
+                                                        Updated
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-duedate" data-id="duedate">
+                                                        Due date
+                                                    </th>
+                                                                    </tr>
+    </thead>
+    <tbody>
+                    
+
+                <tr id="issuerow10172" rel="10172" data-issuekey="SPRINT1-77" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-77" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-77">SPRINT1-77</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SPRINT1-10</span>
+                Schedule and run daily standups
+    </p>
+</td>
+                                            <td class="assignee">            rohitmaji2002
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 18/Jun/25 1:27 PM </td>
+                                            <td class="updated"> 18/Jun/25 1:27 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10170" rel="10170" data-issuekey="SPRINT1-76" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-76" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-76">SPRINT1-76</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SPRINT1-10</span>
+                Plan and create Sprint 1
+    </p>
+</td>
+                                            <td class="assignee">            rohitmaji2002
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 18/Jun/25 1:26 PM </td>
+                                            <td class="updated"> 18/Jun/25 1:27 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10168" rel="10168" data-issuekey="SPRINT1-75" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-75" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-75">SPRINT1-75</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SPRINT1-10</span>
+                Define epics and initial user stories
+    </p>
+</td>
+                                            <td class="assignee">            rohitmaji2002
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 18/Jun/25 1:26 PM </td>
+                                            <td class="updated"> 18/Jun/25 1:27 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10166" rel="10166" data-issuekey="SPRINT1-74" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-74" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-74">SPRINT1-74</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SPRINT1-10</span>
+                Create project in Jira
+    </p>
+</td>
+                                            <td class="assignee">            rohitmaji2002
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 18/Jun/25 1:25 PM </td>
+                                            <td class="updated"> 18/Jun/25 1:27 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10134" rel="10134" data-issuekey="SPRINT1-71" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-71" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-71">SPRINT1-71</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SPRINT1-16</span>
+                Share document with developers
+    </p>
+</td>
+                                            <td class="assignee">            Rahul Kesari
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 3:29 PM </td>
+                                            <td class="updated"> 18/Jun/25 3:06 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10132" rel="10132" data-issuekey="SPRINT1-70" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-70" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-70">SPRINT1-70</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SPRINT1-16</span>
+                Create manual test checklist
+    </p>
+</td>
+                                            <td class="assignee">            Rahul Kesari
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 3:29 PM </td>
+                                            <td class="updated"> 18/Jun/25 3:06 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10130" rel="10130" data-issuekey="SPRINT1-69" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-69" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-69">SPRINT1-69</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SPRINT1-16</span>
+                Identify validation and UI scenarios
+    </p>
+</td>
+                                            <td class="assignee">            Rahul Kesari
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 3:29 PM </td>
+                                            <td class="updated"> 18/Jun/25 3:06 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10124" rel="10124" data-issuekey="SPRINT1-66" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-66" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-66">SPRINT1-66</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SPRINT1-15</span>
+                Verify backup output and logs
+    </p>
+</td>
+                                            <td class="assignee">            Omm Pani
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 3:28 PM </td>
+                                            <td class="updated"> 18/Jun/25 3:04 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10122" rel="10122" data-issuekey="SPRINT1-65" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-65" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-65">SPRINT1-65</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SPRINT1-15</span>
+                Set up cron job for daily execution
+    </p>
+</td>
+                                            <td class="assignee">            Omm Pani
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 3:28 PM </td>
+                                            <td class="updated"> 18/Jun/25 4:18 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10120" rel="10120" data-issuekey="SPRINT1-64" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-64" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-64">SPRINT1-64</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SPRINT1-15</span>
+                Write shell script for compression and backup
+    </p>
+</td>
+                                            <td class="assignee">            Omm Pani
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 3:28 PM </td>
+                                            <td class="updated"> 18/Jun/25 3:13 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10102" rel="10102" data-issuekey="SPRINT1-55" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-55" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-55">SPRINT1-55</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SPRINT1-13</span>
+                Test responsiveness across devices
+    </p>
+</td>
+                                            <td class="assignee">            jaanu20030714
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 3:26 PM </td>
+                                            <td class="updated"> 18/Jun/25 1:35 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10100" rel="10100" data-issuekey="SPRINT1-54" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-54" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-54">SPRINT1-54</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SPRINT1-13</span>
+                Apply styling using CSS3 and Bootstrap 5
+    </p>
+</td>
+                                            <td class="assignee">            jaanu20030714
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 3:26 PM </td>
+                                            <td class="updated"> 18/Jun/25 1:35 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10098" rel="10098" data-issuekey="SPRINT1-53" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-53" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-53">SPRINT1-53</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SPRINT1-13</span>
+                Design login and registration form using HTML5
+    </p>
+</td>
+                                            <td class="assignee">            jaanu20030714
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 3:25 PM </td>
+                                            <td class="updated"> 18/Jun/25 1:35 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10090" rel="10090" data-issuekey="SPRINT1-49" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-49" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-49">SPRINT1-49</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SPRINT1-12</span>
+                Write and share Git usage doc
+    </p>
+</td>
+                                            <td class="assignee">            P Siddharth Krishna
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 3:24 PM </td>
+                                            <td class="updated"> 18/Jun/25 2:49 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10088" rel="10088" data-issuekey="SPRINT1-48" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-48" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-48">SPRINT1-48</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SPRINT1-12</span>
+                Create and protect main and dev branches
+    </p>
+</td>
+                                            <td class="assignee">            P Siddharth Krishna
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 3:24 PM </td>
+                                            <td class="updated"> 18/Jun/25 2:49 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10086" rel="10086" data-issuekey="SPRINT1-47" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-47" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-47">SPRINT1-47</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SPRINT1-12</span>
+                Initialize GitHub repo
+    </p>
+</td>
+                                            <td class="assignee">            P Siddharth Krishna
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 3:24 PM </td>
+                                            <td class="updated"> 18/Jun/25 2:48 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10078" rel="10078" data-issuekey="SPRINT1-43" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-43" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-43">SPRINT1-43</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SPRINT1-11</span>
+                Test form behavior with different input cases
+    </p>
+</td>
+                                            <td class="assignee">            Rohit Mohanty
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 3:23 PM </td>
+                                            <td class="updated"> 18/Jun/25 4:59 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10076" rel="10076" data-issuekey="SPRINT1-42" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-42" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-42">SPRINT1-42</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SPRINT1-11</span>
+                Integrate jQuery for UX interactions
+    </p>
+</td>
+                                            <td class="assignee">            Rohit Mohanty
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 3:23 PM </td>
+                                            <td class="updated"> 18/Jun/25 4:59 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10074" rel="10074" data-issuekey="SPRINT1-41" class="issuerow">
+                                            <td class="issuetype">    Subtask
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-41" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-41">SPRINT1-41</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">SPRINT1-11</span>
+                Write validation functions for input fields
+    </p>
+</td>
+                                            <td class="assignee">            Rohit Mohanty
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 3:23 PM </td>
+                                            <td class="updated"> 18/Jun/25 4:59 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10024" rel="10024" data-issuekey="SPRINT1-16" class="issuerow">
+                                            <td class="issuetype">    Story
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-16" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-16">SPRINT1-16</a>
+</td>
+                                            <td class="summary"><p>
+                QA Checklist Creation
+
+    </p>
+</td>
+                                            <td class="assignee">            Rahul Kesari
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 3:00 PM </td>
+                                            <td class="updated"> 18/Jun/25 3:12 PM </td>
+                                            <td class="duedate">    19/Jun/25
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10023" rel="10023" data-issuekey="SPRINT1-15" class="issuerow">
+                                            <td class="issuetype">    Story
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-15" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-15">SPRINT1-15</a>
+</td>
+                                            <td class="summary"><p>
+                Frontend Code Backup Script
+    </p>
+</td>
+                                            <td class="assignee">            Omm Pani
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 2:59 PM </td>
+                                            <td class="updated"> 18/Jun/25 3:13 PM </td>
+                                            <td class="duedate">    19/Jun/25
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10021" rel="10021" data-issuekey="SPRINT1-13" class="issuerow">
+                                            <td class="issuetype">    Story
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-13" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-13">SPRINT1-13</a>
+</td>
+                                            <td class="summary"><p>
+                Responsive Registration/Login Page
+    </p>
+</td>
+                                            <td class="assignee">            jaanu20030714
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 2:58 PM </td>
+                                            <td class="updated"> 18/Jun/25 3:09 PM </td>
+                                            <td class="duedate">    19/Jun/25
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10020" rel="10020" data-issuekey="SPRINT1-12" class="issuerow">
+                                            <td class="issuetype">    Story
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-12" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-12">SPRINT1-12</a>
+</td>
+                                            <td class="summary"><p>
+                Git Repository Initialization
+    </p>
+</td>
+                                            <td class="assignee">            P Siddharth Krishna
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 2:57 PM </td>
+                                            <td class="updated"> 18/Jun/25 6:02 PM </td>
+                                            <td class="duedate">    19/Jun/25
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10019" rel="10019" data-issuekey="SPRINT1-11" class="issuerow">
+                                            <td class="issuetype">    Story
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-11" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-11">SPRINT1-11</a>
+</td>
+                                            <td class="summary"><p>
+                 Client-side Validation for Metrics Form
+    </p>
+</td>
+                                            <td class="assignee">            Rohit Mohanty
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 2:57 PM </td>
+                                            <td class="updated"> 18/Jun/25 4:59 PM </td>
+                                            <td class="duedate">    19/Jun/25
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10018" rel="10018" data-issuekey="SPRINT1-10" class="issuerow">
+                                            <td class="issuetype">    Story
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-10" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-10">SPRINT1-10</a>
+</td>
+                                            <td class="summary"><p>
+                Agile Management Setup
+    </p>
+</td>
+                                            <td class="assignee">            rohitmaji2002
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 2:56 PM </td>
+                                            <td class="updated"> 18/Jun/25 3:09 PM </td>
+                                            <td class="duedate">    19/Jun/25
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10016" rel="10016" data-issuekey="SPRINT1-8" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SPRINT1-8" href="https://rohitmaji2002.atlassian.net/browse/SPRINT1-8">SPRINT1-8</a>
+</td>
+                                            <td class="summary"><p>
+                Online Health Tracker Development
+    </p>
+</td>
+                                            <td class="assignee">            rohitmaji2002
+    </td>
+                                            <td class="reporter">            rohitmaji2002
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Done&lt;/span&gt;">Done</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="created"> 17/Jun/25 2:36 PM </td>
+                                            <td class="updated"> 18/Jun/25 6:07 PM </td>
+                                            <td class="duedate">    19/Jun/25
+</td>
+                    </tr>
+        </tbody>
+    </table>
+    <div class="end-of-stable-message"></div>
+            <table border="1" >
+<tr>
+    <td bgcolor="#dddddd" colspan="11"><font size="1">
+        Generated at Wed Jun 18 18:06:34 UTC 2025 by rohitmaji2002 using Jira 1001.0.0-SNAPSHOT#100284-rev:4887ecf538c055f9f8bf5766fd6b13091c7ec9a5.
+    </font></td>
+</tr>
+</table>
+
+</body>
+</html>
