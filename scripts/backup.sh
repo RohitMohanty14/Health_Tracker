@@ -3,6 +3,10 @@ PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 
 SOURCE_DIR="$PROJECT_ROOT/frontend"
 BACKUP_DIR="$PROJECT_ROOT/backups"
+
+mkdir -p "$BACKUP_DIR"
+
+
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M")
 BACKUP_FILE="$BACKUP_DIR/frontend_backup_$TIMESTAMP.tar.gz"
 
