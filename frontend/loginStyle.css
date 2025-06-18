@@ -49,20 +49,15 @@ h2 {
   /* Highlighted Change: Heading color to deep navy for a strong, professional look */
   color: #001f54;
 }
-
 .form-control {
   border-radius: 8px;
   padding: 12px 16px;
   font-size: 14px;
-  /* Highlighted Change: Default input border color to a neutral light gray */
   border-color: #dde2e4;
-  /* Added: Smooth transitions for focus effects */
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .form-control:focus {
-  /* Highlighted Change: Border color to modern teal on focus */
   border-color: #1282a2;
-  /* Highlighted Change: Soft teal glow on focus */
   box-shadow: 0 0 0 0.25rem rgba(18, 130, 162, 0.25);
   outline: none;
 }
@@ -138,7 +133,6 @@ a:hover {
     max-width: 90%; /* Adjust card width on smaller screens */
   }
 }
-
 html {
   scroll-behavior: smooth;
 }

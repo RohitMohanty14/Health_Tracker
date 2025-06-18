@@ -12,6 +12,7 @@
  * Error Red:        #DC3545 (Bootstrap's default red, clear and consistent)
  */
 
+
 body {
   background-color: #e0f2e9;
   font-family: "Montserrat", sans-serif;
@@ -48,6 +49,7 @@ h2 {
   border-radius: 8px;
   padding: 12px 16px;
   font-size: 14px;
+
   border-color: #dde2e4;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -73,7 +75,6 @@ h2 {
   margin-top: 0.25rem;
 }
 
-/* Buttons */
 .btn-primary {
   background-color: #1282a2;
   border-color: #1282a2;
@@ -147,7 +148,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* --- Dark Mode Styling --- */
 body.dark-mode {
   background-color: #001f54;
   color: #fefcfb;
@@ -180,4 +180,5 @@ body.dark-mode h3,
 body.dark-mode h5,
 body.dark-mode p {
   color: #fefcfb !important;
+
 }

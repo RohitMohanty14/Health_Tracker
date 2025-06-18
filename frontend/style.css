@@ -1,3 +1,4 @@
+
 /*
  * Color Palette:
  * Deep Navy:      #001F54 (for headings and primary text)
@@ -9,12 +10,12 @@
  * Darker Teal:    #0e6a87 (for hover/active states)
  * Darker Rose:    #965463 (for hover/active states)
  */
-
-/* General body styling */
 body {
   background: linear-gradient(to bottom, #fefcfb, #e0f2e9);
+
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
+  color: #343a40;
 }
 
 /* Hero Section Image Styling */
@@ -26,7 +27,7 @@ body {
   box-shadow: 0 10px 25px rgba(0, 31, 84, 0.1);
   animation: floatIn 1s ease-out;
   display: block;
-  filter: brightness(0.95);
+  filter: brightness(0.9); /* Subtle dimming to fit ambush aesthetic */
 }
 
 /* Text fade-in */
@@ -71,7 +72,6 @@ body {
   border-color: #1282a2;
   box-shadow: 0 8px 20px rgba(0, 31, 84, 0.1);
 }
-
 .blockquote {
   font-size: 1.2rem;
   font-style: italic;
@@ -124,7 +124,15 @@ body {
   border-radius: 8px;
   padding: 12px 16px;
   font-size: 14px;
+  border-color: #c8e6c9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Ensure transitions are set */
 }
+.form-control:focus {
+  border-color: #2e8b57; /* Primary green on focus */
+  box-shadow: 0 0 0 0.25rem rgba(46, 139, 87, 0.2); /* Soft green glow */
+  outline: none;
+}
+
 .form-label {
   font-weight: 500;
   color: #001f54;
@@ -169,7 +177,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* --- Dark Mode Styling --- */
 body.dark-mode {
   background: #001f54;
   color: #fefcfb;
