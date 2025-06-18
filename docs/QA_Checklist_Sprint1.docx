@@ -1,0 +1,19 @@
+QA Checklist – Online Health Tracker (Sprint 1)
+1. Form Validation
+•	 All input fields are required
+•	 Steps field accepts only numeric input
+•	 Calories field accepts only numeric input
+•	 Sleep Hours accepts decimal values
+•	 Email must follow valid format (e.g., user@gmail.com)
+•	 Password must be at least 8 characters and must contain the following:
+o	Atleast one uppercase character
+o	Atleast one lowercase character
+o	Atleast one number
+o	Atleast one special character
+•	 Form resets after submission
+2. UI Responsiveness
+•	 Pages are mobile-responsive (tested using Chrome DevTools)
+•	 Inputs and buttons fit on small screens (no horizontal scrolling)
+•	 Text is readable across all devices
+•	 No layout overlap on resizing
+•	 Form scrolls properly on smaller screens
