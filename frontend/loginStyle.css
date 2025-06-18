@@ -1,40 +1,32 @@
 /*
- * File: css/style.css (for login.html)
- * Ambient Green Ambush Theme for Login Form
- *
  * Color Palette:
- * Primary Green:    #2E8B57 (Sea Green - sophisticated, main accent)
- * Darker Green:     #287A4C (for hover/active states of primary elements)
- * Lighter Green:    #EAF8F1 (very pale, almost white green for backgrounds/subtle accents)
- * Accent Green:     #66BB6A (light green for valid states, subtle borders)
+ * Deep Navy:      #001F54 (for headings and primary text)
+ * Dusty Rose:     #AA6373 (for secondary call-to-action buttons)
+ * Modern Teal:    #1282A2 (for primary buttons, links, and accents)
+ * Mint Cream:     #E0F2E9 (for the main body background)
+ * Off-White:      #FEFCFB (for card backgrounds)
  *
  * White:            #FFFFFF
- * Off-White/Tint:   #F8FCF8 (for body background, very subtle green tint)
- * Text:             #343a40 (Bootstrap's default dark)
+ * Text:             #001F54 (New primary text color)
  * Secondary Text:   #6c757d (Bootstrap's default muted gray)
  * Error Red:        #DC3545 (Bootstrap's default red, clear and consistent)
  */
 
 /* General body styling */
 body {
-  /* Highlighted Change: Ambient green gradient for background */
-  background: linear-gradient(to right, #d0f0c0, #8bc34a);
+  background-color: #e0f2e9;
   /* Highlighted Change: Consistent font family */
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
-  /* Highlighted Change: Default text color */
-  color: #343a40;
+  /* Highlighted Change: Default text color to deep navy for excellent contrast */
+  color: #001f54;
 }
 
-/* Card styling (for login form container) */
 .card {
   border: none;
-  /* Highlighted Change: More pronounced rounded corners */
   border-radius: 16px;
-  background-color: #ffffff; /* Crisp white background */
-  /* Highlighted Change: Softer, slightly deeper shadow */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  /* Added: Entry animation for the form card */
+  background-color: #fefcfb;
+  box-shadow: 0 8px 20px rgba(0, 31, 84, 0.1);
   animation: fadeInScale 0.6s ease-out forwards;
 }
 
@@ -51,94 +43,67 @@ body {
 }
 
 /* Headings */
-h3 {
-  font-weight: 700;
-  /* Highlighted Change: Heading color to primary green */
-  color: #2e8b57;
-}
+h3,
 h2 {
-  /* If h2 is ever used on this page */
   font-weight: 700;
-  /* Highlighted Change: Heading color to primary green */
-  color: #2e8b57;
+  /* Highlighted Change: Heading color to deep navy for a strong, professional look */
+  color: #001f54;
 }
-
-/* Input styling (overriding Bootstrap defaults) */
 .form-control {
   border-radius: 8px;
   padding: 12px 16px;
   font-size: 14px;
-  /* Highlighted Change: Default input border color to a light green */
-  border-color: #c8e6c9;
-  /* Added: Smooth transitions for focus effects */
+  border-color: #dde2e4;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .form-control:focus {
-  /* Highlighted Change: Border color to primary green on focus */
-  border-color: #2e8b57;
-  /* Highlighted Change: Soft green glow on focus */
-  box-shadow: 0 0 0 0.25rem rgba(46, 139, 87, 0.2);
+  border-color: #1282a2;
+  box-shadow: 0 0 0 0.25rem rgba(18, 130, 162, 0.25);
   outline: none;
 }
 .form-label {
   font-weight: 500;
-  /* Highlighted Change: Label text color to a soft dark gray */
-  color: #333;
+  color: #001f54;
 }
 
-/* Validation feedback styling (Bootstrap overrides for theme colors) */
 .form-control.is-invalid {
-  /* Highlighted Change: Error border color */
   border-color: #dc3545 !important;
 }
 .form-control.is-valid {
-  /* Highlighted Change: Valid border color */
-  border-color: #66bb6a !important;
+  border-color: #1282a2 !important;
 }
 .invalid-feedback {
-  /* Highlighted Change: Error text color */
   color: #dc3545;
   font-size: 0.875em;
   margin-top: 0.25rem;
 }
 
-/* Buttons */
 .btn-primary {
-  /* Login button */
-  /* Highlighted Change: Primary button uses the deep sea green */
-  background-color: #2e8b57;
-  /* Highlighted Change: Ensure border matches background */
-  border-color: #2e8b57;
-  border-radius: 50px; /* Highly rounded */
+  background-color: #1282a2;
+  border-color: #1282a2;
+  border-radius: 50px;
   font-weight: 600;
-  /* Highlighted Change: Enhanced transition for all button effects */
   transition: all 0.3s ease-in-out;
 }
 .btn-primary:hover {
-  /* Highlighted Change: Darker green on hover */
-  background-color: #287a4c;
-  border-color: #287a4c;
-  /* Highlighted Change: Subtle scale and green-tinted shadow */
+  background-color: #0e6a87;
+  border-color: #0e6a87;
   transform: scale(1.05);
-  box-shadow: 0 8px 18px rgba(46, 139, 87, 0.25);
+  box-shadow: 0 8px 18px rgba(18, 130, 162, 0.25);
 }
 
-/* Common link styling */
 a {
   text-decoration: none;
-  /* Highlighted Change: Links use the primary green color */
-  color: #2e8b57;
+  color: #1282a2;
 }
 a:hover {
   text-decoration: underline;
 }
 
-/* Checkbox label */
 .form-check-label {
   padding-left: 6px;
 }
 
-/* General status messages (for JS feedback like "Login successful!") */
 .status-message {
   margin-top: 15px;
   padding: 10px;
@@ -146,27 +111,20 @@ a:hover {
   font-weight: bold;
   text-align: center;
   display: none;
-  /* Added: Transition for message appearance */
   transition: all 0.4s ease-in-out;
-  opacity: 0; /* Start hidden for transition effect */
+  opacity: 0;
 }
 .status-message.success {
-  /* Highlighted Change: Very light green background for success */
-  background-color: #eaf8f1;
-  /* Highlighted Change: Primary green text for success */
-  color: #2e8b57;
-  /* Highlighted Change: Subtle green border */
-  border: 1px solid #a3d9b5;
-  opacity: 1; /* Show for transition */
+  background-color: #e0f2e9;
+  color: #1282a2;
+  border: 1px solid #a4d4e3;
+  opacity: 1;
 }
 .status-message.error {
-  /* Highlighted Change: Very light red background for error */
   background-color: #fde8e9;
-  /* Highlighted Change: Standard error red text */
   color: #dc3545;
-  /* Highlighted Change: Subtle red border */
   border: 1px solid #f5c6cb;
-  opacity: 1; /* Show for transition */
+  opacity: 1;
 }
 
 /* Responsive adjustments */
@@ -175,54 +133,40 @@ a:hover {
     max-width: 90%; /* Adjust card width on smaller screens */
   }
 }
-
-/* Smooth scrolling (if applicable to the entire site) */
 html {
   scroll-behavior: smooth;
 }
 
 /* --- Dark Mode Styling --- */
-/* Ensure you add/remove 'dark-mode' class to <body> with JavaScript for this to work */
 body.dark-mode {
-  /* Highlighted Change: Very dark green for dark mode body background */
-  background-color: #0f1e1a;
-  /* Highlighted Change: Lighter text for dark mode */
-  color: #e0e0e0;
+  background: #001f54;
+  color: #fefcfb;
 }
 
 .dark-mode .card {
-  /* Highlighted Change: Darker green for card background */
-  background-color: #1c2e2a !important;
-  color: #e0e0e0;
+  background-color: #0b2a64 !important;
+  color: #fefcfb;
 }
 
 .dark-mode a {
-  /* Highlighted Change: Light green for links in dark mode */
-  color: #81c784;
+  color: #fefcfb;
 }
 
 .dark-mode .form-control {
-  /* Highlighted Change: Dark green for input background in dark mode */
-  background-color: #2a3a35;
-  color: #fff;
-  /* Highlighted Change: Darker green for input border in dark mode */
-  border-color: #405c55;
+  background-color: #0b2a64;
+  color: #fefcfb;
+  border-color: #3a4f7a;
 }
-
-/* Fix sections with light backgrounds in dark mode */
 body.dark-mode .bg-light {
-  /* Highlighted Change: Dark green background override for .bg-light */
-  background-color: #1a2a25 !important;
+  background-color: #0b2a64 !important;
 }
 body.dark-mode .text-dark {
-  /* Highlighted Change: Ensure text is light in dark mode for contrast */
-  color: #f1f1f1 !important;
+  color: #fefcfb !important;
 }
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode h5,
 body.dark-mode p {
-  /* Highlighted Change: Ensure headings and paragraphs are light in dark mode */
-  color: #f1f1f1 !important;
+  color: #fefcfb !important;
 }

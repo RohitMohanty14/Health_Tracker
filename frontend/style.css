@@ -1,13 +1,20 @@
+
+/*
+ * Color Palette:
+ * Deep Navy:      #001F54 (for headings and primary text)
+ * Dusty Rose:     #AA6373 (for secondary call-to-action buttons)
+ * Modern Teal:    #1282A2 (for primary buttons, links, and accents)
+ * Mint Cream:     #E0F2E9 (for backgrounds/subtle accents)
+ * Off-White:      #FEFCFB (for cards and content backgrounds)
+ *
+ * Darker Teal:    #0e6a87 (for hover/active states)
+ * Darker Rose:    #965463 (for hover/active states)
+ */
 body {
-  /* Highlighted Change: Replaced gradient colors with shades of green */
-  background: linear-gradient(
-    to right,
-    #d0f0c0,
-    #8bc34a
-  ); /* A gentle light green to a vibrant lime green */
+  background: linear-gradient(to bottom, #fefcfb, #e0f2e9);
+
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
-  /* Added for overall consistency, making sure text defaults to a dark neutral */
   color: #343a40;
 }
 
@@ -17,11 +24,9 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
-  /* Highlighted Change: Slightly more subtle black shadow, can be green if desired but black is versatile */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 31, 84, 0.1);
   animation: floatIn 1s ease-out;
   display: block;
-  /* Highlighted Change: Adjust brightness slightly if original image is too vivid */
   filter: brightness(0.9); /* Subtle dimming to fit ambush aesthetic */
 }
 
@@ -55,23 +60,18 @@ body {
 
 /* Feature Box Styling */
 .feature-box {
-  /* Highlighted Change: Replaced black border with a primary green */
-  border: 2px solid #2e8b57; /* Sea Green for a defined, thematic border */
+  border: 2px solid #e0e0e0;
   border-radius: 25px;
   padding: 20px;
-  background-color: #ffffff;
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow to transition */
+  background-color: #fefcfb;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature-box:hover {
   transform: translateY(-5px);
-  /* Highlighted Change: Replaced blue hover border with a slightly darker green */
-  border-color: #287a4c; /* Darker green on hover for interaction feedback */
-  /* Highlighted Change: Added a subtle, green-tinted box-shadow on hover */
-  box-shadow: 0 8px 20px rgba(46, 139, 87, 0.2); /* Green-tinted shadow */
+  border-color: #1282a2;
+  box-shadow: 0 8px 20px rgba(0, 31, 84, 0.1);
 }
-
-/* Carousel Testimonials */
 .blockquote {
   font-size: 1.2rem;
   font-style: italic;
@@ -80,7 +80,6 @@ body {
 .blockquote-footer {
   margin-top: 10px;
   font-size: 0.9rem;
-  /* Highlighted Change: Keep as a soft dark grey for readability, fits neutral palette */
   color: #6c757d;
 }
 
@@ -88,46 +87,36 @@ body {
 .card {
   border: none;
   border-radius: 16px;
-  background-color: #ffffff;
-  /* Highlighted Change: Slightly softened shadow, or could be green-tinted if preferred */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  background-color: #fefcfb;
+  box-shadow: 0 8px 20px rgba(0, 31, 84, 0.1);
 }
 
 /* Buttons */
 .btn-primary {
-  /* Highlighted Change: Primary button uses the deep sea green */
-  background-color: #2e8b57;
-  /* Highlighted Change: Ensure border is also green for consistency */
-  border-color: #2e8b57;
+  background-color: #1282a2;
+  border-color: #1282a2;
   border-radius: 50px;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
 }
 .btn-success {
-  /* Highlighted Change: Success button uses a slightly brighter green */
-  background-color: #388e3c;
-  /* Highlighted Change: Ensure border is also green for consistency */
-  border-color: #388e3c;
+  background-color: #aa6373;
+  border-color: #aa6373;
   border-radius: 50px;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
 }
-
 .btn-primary:hover {
-  /* Highlighted Change: Darker green on hover for primary button */
-  background-color: #287a4c;
-  border-color: #287a4c;
   transform: scale(1.05);
-  /* Highlighted Change: Green-tinted box-shadow on hover */
-  box-shadow: 0 8px 18px rgba(46, 139, 87, 0.25);
+  background-color: #0e6a87; /* Darker Teal */
+  border-color: #0e6a87;
+  box-shadow: 0 8px 18px rgba(18, 130, 162, 0.25);
 }
 .btn-success:hover {
-  /* Highlighted Change: Darker green on hover for success button */
-  background-color: #337e33;
-  border-color: #337e33;
   transform: scale(1.05);
-  /* Highlighted Change: Green-tinted box-shadow on hover */
-  box-shadow: 0 8px 18px rgba(56, 142, 60, 0.25);
+  background-color: #965463; /* Darker Rose */
+  border-color: #965463;
+  box-shadow: 0 8px 18px rgba(170, 99, 115, 0.25);
 }
 
 /* Input styling */
@@ -135,11 +124,9 @@ body {
   border-radius: 8px;
   padding: 12px 16px;
   font-size: 14px;
-  /* Highlighted Change: Input border default to a light green */
   border-color: #c8e6c9;
   transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Ensure transitions are set */
 }
-/* Highlighted Change: Input focus style for consistency */
 .form-control:focus {
   border-color: #2e8b57; /* Primary green on focus */
   box-shadow: 0 0 0 0.25rem rgba(46, 139, 87, 0.2); /* Soft green glow */
@@ -148,29 +135,23 @@ body {
 
 .form-label {
   font-weight: 500;
-  /* Highlighted Change: Keep as dark gray for readability */
-  color: #333;
+  color: #001f54;
 }
 
 a {
   text-decoration: none;
-  /* Highlighted Change: Links now use the primary green color */
-  color: #2e8b57;
+  color: #1282a2;
 }
 a:hover {
   text-decoration: underline;
 }
 
 /* Headings */
-h3 {
+h3,
+h2,
+h1 {
   font-weight: 700;
-  /* Highlighted Change: Headings use the primary green */
-  color: #2e8b57;
-}
-h2 {
-  /* Highlighted Change: Headings use the primary green */
-  color: #2e8b57;
-  font-weight: 700;
+  color: #001f54;
 }
 
 /* Checkbox label */
@@ -192,72 +173,58 @@ h2 {
   }
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* --- Dark Mode Enhancements (Ambient Green Ambush for Dark Mode) --- */
-
 body.dark-mode {
-  /* Highlighted Change: Very dark green for dark mode background */
-  background-color: #0f1e1a;
-  /* Highlighted Change: Lighter text for dark mode */
-  color: #e0e0e0;
+  background: #001f54;
+  color: #fefcfb;
 }
 
 .dark-mode .card,
 .dark-mode .feature-box {
-  /* Highlighted Change: Dark green for card/feature box backgrounds */
-  background-color: #1c2e2a !important;
-  color: #e0e0e0;
+  background-color: #0b2a64 !important;
+  color: #fefcfb;
+  border-color: #3a4f7a;
 }
 
 .dark-mode .navbar,
 .dark-mode footer {
-  /* Highlighted Change: Very dark green for navbar/footer backgrounds */
-  background-color: #001a14 !important;
+  background-color: #051739 !important;
 }
 
 .dark-mode a {
-  /* Highlighted Change: Light green for links in dark mode */
-  color: #81c784;
+  color: #fefcfb;
 }
 
 .dark-mode .form-control {
-  /* Highlighted Change: Dark green for input background in dark mode */
-  background-color: #2a3a35;
-  color: #fff;
-  /* Highlighted Change: Darker green for input border in dark mode */
-  border-color: #405c55;
+  background-color: #0b2a64;
+  color: #fefcfb;
+  border-color: #3a4f7a;
 }
 
 .dark-mode .btn-outline-light {
-  /* Highlighted Change: Light green for outline button border */
-  border-color: #81c784;
-  /* Highlighted Change: Light green for outline button text */
-  color: #81c784;
+  border-color: #22a2c3;
+  color: #22a2c3;
 }
 
 .dark-mode .btn-outline-light:hover {
-  background-color: #81c784;
-  color: #004d40;
+  background-color: #22a2c3;
+  color: #001f54;
 }
 
-/* Fix sections with light backgrounds in dark mode */
-body.dark-mode .bg-light {
-  background-color: #1a2a25 !important;
-}
+body.dark-mode .bg-light,
 body.dark-mode .bg-white {
-  background-color: #2e3d39 !important;
+  background-color: #0b2a64 !important;
 }
 body.dark-mode .text-dark {
-  color: #f1f1f1 !important;
+  color: #fefcfb !important;
 }
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode h5,
 body.dark-mode p {
-  color: #f1f1f1 !important;
+  color: #fefcfb !important;
 }
