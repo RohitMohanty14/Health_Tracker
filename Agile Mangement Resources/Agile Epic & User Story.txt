@@ -1,0 +1,120 @@
+EPIC: Sprint 1 – Setup and Frontend Foundation 
+Epic Description: 
+Establish the groundwork for the Online Health Tracker project by setting up Agile tracking in 
+Jira, designing the frontend UI, enabling client-side functionality, and ensuring version control 
+and quality assurance readiness. 
+Team: Scrum Team Alpha 
+Assignee: Member 1 (Scrum Master) 
+User Story 1: Agile Management Setup 
+As a Scrum Master, 
+I want to create the product backlog and epics in Jira and facilitate a daily standup process, 
+So that the team follows Agile methodology. 
+Scope: Jira board creation, backlog planning, sprint planning, standup facilitation. 
+Preconditions: Jira access and Scrum team defined. 
+Acceptance Criteria: 
+• Jira board with epics and user stories 
+• Sprint 1 created with issues assigned 
+• Daily standup calendar shared 
+• Team understands Agile workflow 
+Tasks: 
+• Create project in Jira 
+• Define epics and initial user stories 
+• Plan and create Sprint 1 
+• Schedule and run daily standups 
+Story Points: 10 
+Release: Sprint 1 
+Assignee: Rohit Maji 
+User Story 2: Responsive Registration/Login Page 
+As a frontend developer, 
+I want to design a responsive user registration and login page using HTML5, CSS3, and 
+Bootstrap 5, 
+So that users can access the app on any device. 
+Scope: HTML form, CSS styling, Bootstrap grid layout. 
+Preconditions: Project skeleton is ready. 
+Acceptance Criteria: 
+• Responsive registration and login forms 
+• Styled with Bootstrap 
+• Accessible from mobile/tablet/desktop 
+Tasks: 
+• Design login and registration form using HTML5 
+• Apply styling using CSS3 and Bootstrap 5 
+• Test responsiveness across devices 
+Story Points: 10 
+Release: Sprint 1 
+Assignee: Pemula Jahnavi 
+User Story 3: Client-side Validation for Metrics Form 
+As a UI engineer, 
+I want to use JavaScript and jQuery to add client-side validation for the health metrics form 
+(steps, sleep hours, calories), 
+So that users input correct data before submission. 
+Scope: Validation script for form inputs. 
+Preconditions: Form fields present in HTML. 
+Acceptance Criteria: 
+• All fields validated on client-side 
+• Alerts for incorrect/missing values 
+• Smooth UX with jQuery 
+Tasks: 
+• Write validation functions for input fields 
+• Integrate jQuery for UX interactions 
+• Test form behavior with different input cases 
+Story Points: 10 
+Release: Sprint 1 
+Assignee: Rohit Mohanty 
+User Story 4: Git Repository Initialization 
+As a Git lead, 
+I want to initialize a remote Git repo, define branching strategy, and document Git commands 
+used by the team, 
+So that version control is structured. 
+Scope: GitHub setup, README for commands. 
+Preconditions: GitHub access. 
+Acceptance Criteria: 
+• Git repo initialized and shared 
+• Development/main branches setup 
+• Git strategy documented 
+Tasks: 
+• Initialize GitHub repo 
+• Create and protect main and dev branches 
+• Write and share Git usage doc 
+Story Points: 10 
+Release: Sprint 1 
+Assignee: P Siddharth Krishna 
+User Story 5: Frontend Code Backup Script 
+As a Unix user, 
+I want to write a shell script that compresses and backs up the frontend code every evening, 
+So that code is safe and stored daily. 
+Scope: Bash script with cron job. 
+Preconditions: Unix terminal access. 
+Acceptance Criteria: 
+• Script created and tested 
+• Runs via cron daily 
+• Backup stored in compressed file 
+Tasks: 
+• Write shell script for compression and backup 
+• Set up cron job for daily execution 
+• Verify backup output and logs 
+Story Points: 10 
+Release: Sprint 1 
+Assignee: Omm Susekhar Pani 
+User Story 6: QA Checklist Creation 
+As a QA, 
+I want to write a checklist for form validation and UI responsiveness, 
+So that I can test for consistency and bugs. 
+Scope: Manual test plan. 
+Preconditions: Forms are implemented. 
+Acceptance Criteria: 
+• Written checklist in doc/pdf 
+• Covers form inputs and mobile view 
+• Shared with team 
+Tasks: 
+• Identify validation and UI scenarios 
+• Create manual test checklist 
+• Share document with developers 
+Story Points: 10 
+Release: Sprint 1 
+Assignee: Rahul Kesari 
+Sprint 1 Deliverables: 
+• Agile board in Jira with user stories and epics 
+• Responsive UI using HTML5/CSS3/jQuery/Bootstrap 
+• GitHub repo and branches set up 
+• Backup shell script 
+• QA checklist for form validation 
