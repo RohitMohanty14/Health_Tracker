@@ -4,7 +4,7 @@ Establish the groundwork for the Online Health Tracker project by setting up Agi
 Jira, designing the frontend UI, enabling client-side functionality, and ensuring version control 
 and quality assurance readiness. 
 Team: Scrum Team Alpha 
-Assignee: Member 1 (Scrum Master) 
+Assignee: Rohit Maji 
 User Story 1: Agile Management Setup 
 As a Scrum Master, 
 I want to create the product backlog and epics in Jira and facilitate a daily standup process, 
