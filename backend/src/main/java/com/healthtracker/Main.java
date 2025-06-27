@@ -15,8 +15,8 @@ public class Main {
 
         User user = new User(
             userId,
-            "Siddharth Krishna",
-            "sid@example.com",
+            "User1",
+            "user1@example.com",
             "hashedPass123",
             LocalDateTime.now()
         );
