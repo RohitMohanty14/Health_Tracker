@@ -5,6 +5,10 @@ import com.healthtracker.model.HealthEntry;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import jakarta.validation.Valid;
 
 import java.time.LocalDate;
@@ -18,6 +22,7 @@ import java.util.HashMap;
 @RequestMapping("/api/health") // Base path for health related endpoints
 @CrossOrigin(origins = "http://localhost:63342") // IMPORTANT for development
 public class HealthController {
+    private static final Logger logger = LoggerFactory.getLogger(HealthController.class);
 
     // --- Mock Health Entry Storage (In a real app, this would be a database/service) ---
     private final List<HealthEntry> healthEntries = new ArrayList<>();
@@ -41,7 +46,7 @@ public class HealthController {
         );
 
         healthEntries.add(newEntry);
-        System.out.println("New Health Entry Added: " + newEntry); // Log to console for verification
+        logger.info("New health entry added: {}", newEntry);// Log to console and logs folder
 
         response.put("message", "Health metrics submitted successfully!");
         response.put("entryId", newEntry.entryId().toString());
