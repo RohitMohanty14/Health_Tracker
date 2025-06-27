@@ -9,6 +9,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import jakarta.validation.Valid;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.time.LocalDateTime;
 import java.util.UUID;
 import java.util.HashMap;
@@ -20,6 +23,9 @@ import java.util.Map;
 // Adjust "http://localhost:63342" to your frontend's actual URL if using Live Server or another tool.
 // For production, this should be your deployed frontend URL.
 public class AuthController {
+
+    //logger
+    private static final Logger logger = LoggerFactory.getLogger(AuthController.class);
 
     // --- Mock User Storage (In a real app, this would be a database/service) ---
     private final Map<String, User> users = new HashMap<>(); // email -> User object
@@ -37,21 +43,25 @@ public class AuthController {
     @PostMapping("/login")
     public ResponseEntity<Map<String, String>> login(@Valid @RequestBody LoginRequest loginRequest) {
         Map<String, String> response = new HashMap<>();
+        String email = loginRequest.email();
+        logger.info("Login attempt for email: {}", email);
 
         User user = findUserByEmail(loginRequest.email());
 
         if (user == null) {
+            logger.warn("Login failed - user not found: {}", email);
             response.put("message", "Invalid credentials: User not found.");
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(response);
         }
 
         // Verify password using BCrypt
         if (BCrypt.checkpw(loginRequest.password(), user.hashedPassword())) {
+            logger.info("Login successful for user: {}", email);
             response.put("message", "Login successful!");
             response.put("userId", user.userId().toString());
-            // In a real application, you'd generate a JWT or session token here
             return ResponseEntity.ok(response);
         } else {
+            logger.warn("Login failed - incorrect password for user: {}", email);
             response.put("message", "Invalid credentials: Password incorrect.");
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(response);
         }
@@ -61,10 +71,15 @@ public class AuthController {
     @PostMapping("/register")
     public ResponseEntity<Map<String, String>> register(@Valid @RequestBody RegisterRequest registerRequest) {
         Map<String, String> response = new HashMap<>();
+        String email = registerRequest.email();
 
-        if (userExists(registerRequest.email())) {
+        logger.info("Register attempt for email: {}", email);
+
+
+        if (userExists(email)) {
+            logger.warn("Registration failed - email already exists: {}", email);
             response.put("message", "Email already registered.");
-            return ResponseEntity.status(HttpStatus.CONFLICT).body(response); // 409 Conflict
+            return ResponseEntity.status(HttpStatus.CONFLICT).body(response);
         }
 
         // Hash the password before storing
@@ -79,6 +94,8 @@ public class AuthController {
             LocalDateTime.now()
         );
         users.put(newUser.email(), newUser); // Store in mock map
+
+        logger.info("Registration successful for email: {}", email);
 
         response.put("message", "Registration successful!");
         response.put("userId", newUser.userId().toString());
