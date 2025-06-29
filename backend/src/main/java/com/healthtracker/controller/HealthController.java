@@ -1,22 +1,26 @@
 package com.healthtracker.controller;
-
-import com.healthtracker.dto.HealthEntryRequest;
-import com.healthtracker.model.HealthEntry;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import jakarta.validation.Valid;
-
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
-import java.util.HashMap;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.healthtracker.dto.HealthEntryRequest;
+import com.healthtracker.jdbc.HealthEntryDAO;
+import com.healthtracker.model.HealthEntry;
+
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api/health") // Base path for health related endpoints
@@ -46,6 +50,8 @@ public class HealthController {
         );
 
         healthEntries.add(newEntry);
+        HealthEntryDAO dao = new HealthEntryDAO();
+        dao.insertHealthEntry(newEntry);
         logger.info("New health entry added: {}", newEntry);// Log to console and logs folder
 
         response.put("message", "Health metrics submitted successfully!");

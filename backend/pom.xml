@@ -77,7 +77,13 @@
             <artifactId>spring-security-core</artifactId>
             <version>6.2.0</version>
         </dependency>
-
+        <dependency>
+    <groupId>com.oracle.jdbc</groupId>
+    <artifactId>ojdbc11</artifactId>
+    <version>21.3.0.0</version>
+    <scope>system</scope>
+    <systemPath>C:/Rahul/SPRINT-1 ONLINE HEALTH CARE SYSTEM/Health_Tracker/backend/lib/ojdbc11.jar</systemPath>
+</dependency>
 
     </dependencies>
 
